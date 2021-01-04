@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mainTitleCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="6dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mainTitleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_title"
+            android:gravity="center"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/homeData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/homeLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home Team"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/homeTeam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Enter home team name"
+            android:layout_marginTop="10dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/homeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/teamlogo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/homePlayerNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 player(s)"
+            />
+
+        <ListView
+            android:id="@+id/homePlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/addHomePlayer"
+            android:layout_width="12pt"
+            android:layout_height="12pt"
+            android:scaleType="fitEnd"
+            android:src="@drawable/icon_add_button" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/awayData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/awayLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Away Team"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/awayTeam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Enter away team name"
+            android:layout_marginTop="10dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/awayImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/teamlogo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/awayPlayerNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 player(s)"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/addAwayPlayer"
+            android:layout_width="12pt"
+            android:layout_height="12pt"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_add_button" />
+
+        <ListView
+            android:id="@+id/awayPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startBtn"
+        android:layout_width="20pt"
+        android:layout_height="10pt"
+        android:text="Next"
+        />
+
+</LinearLayout>
